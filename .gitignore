@@ -1,1 +1,50 @@
-/.vs
+# Build output
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio / VS Code local settings
+.vs/
+.vscode/*
+!.vscode/mcp.json
+
+# Rider / ReSharper
+.idea/
+_ReSharper*/
+*.DotSettings.user
+
+# Logs and diagnostics
+*.log
+*.tmp
+*.cache
+
+# Test and coverage artifacts
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+playwright-report/
+test-results/
+
+# Package folders
+packages/
+
+# OS files
+.DS_Store
+Thumbs.db
+aspire-output/
+# Squad: ignore runtime state (logs, inbox, sessions)
+.squad/orchestration-log/
+.squad/log/
+.squad/decisions/inbox/
+.squad/sessions/
+# Squad: SubSquad activation file (local to this machine)
+.squad-workstream
