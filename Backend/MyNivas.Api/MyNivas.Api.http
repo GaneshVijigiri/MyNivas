@@ -1,0 +1,6 @@
+@MyNivas.Api_HostAddress = http://localhost:5281
+
+GET {{MyNivas.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

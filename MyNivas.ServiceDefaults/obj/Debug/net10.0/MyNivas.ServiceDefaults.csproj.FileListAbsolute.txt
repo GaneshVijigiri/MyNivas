@@ -1,0 +1,12 @@
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\bin\Debug\net10.0\MyNivas.ServiceDefaults.deps.json
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\bin\Debug\net10.0\MyNivas.ServiceDefaults.dll
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\bin\Debug\net10.0\MyNivas.ServiceDefaults.pdb
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\obj\Debug\net10.0\MyNivas.ServiceDefaults.csproj.AssemblyReference.cache
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\obj\Debug\net10.0\MyNivas.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\obj\Debug\net10.0\MyNivas.ServiceDefaults.AssemblyInfoInputs.cache
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\obj\Debug\net10.0\MyNivas.ServiceDefaults.AssemblyInfo.cs
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\obj\Debug\net10.0\MyNivas.ServiceDefaults.csproj.CoreCompileInputs.cache
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\obj\Debug\net10.0\MyNivas.ServiceDefaults.dll
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\obj\Debug\net10.0\refint\MyNivas.ServiceDefaults.dll
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\obj\Debug\net10.0\MyNivas.ServiceDefaults.pdb
+F:\MyProjects\MyNivas\MyNivas.ServiceDefaults\obj\Debug\net10.0\ref\MyNivas.ServiceDefaults.dll
