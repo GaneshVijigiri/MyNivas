@@ -2,9 +2,9 @@
   <Folder Name="/Backend/">
     <Project Path="Backend/MyNivas.Api/MyNivas.Api.csproj" />
     <Project Path="Backend/MyNivas.Application/MyNivas.Application.csproj" Id="f1a41911-7089-4d37-b6df-8074028b2ded" />
-    <Project Path="Backend/MyNivas.Backend/MyNivas.Backend.csproj" Id="59240133-d8b4-4466-b109-12b37dab1b19" />
     <Project Path="Backend/MyNivas.Infrastructure/MyNivas.Infrastructure.csproj" Id="ee1ed2b7-fed7-40c3-8210-e11925697c59" />
     <Project Path="Backend/MyNivas.Server/MyNivas.Server.csproj" />
+    <Project Path="MyNivas.Domain/MyNivas.Domain.csproj" Id="512fada0-77f5-4ee4-b746-5ba3a6ffc6a5" />
   </Folder>
   <Folder Name="/Frontend/">
     <Project Path="Frontend/mynivas.web/mynivas.web.esproj">
