@@ -1,9 +1,13 @@
 import { getAsync } from "./common/ApiHandler";
 import { useQuery } from "@tanstack/react-query";
 import { useLoader } from "./common/hooks/useLoader";
-import AppButton from "./common/components/AppButton";
+import { Button } from "./common/components/ui/button";
+import { AppDiaglog } from "./common/components/ui/dialog";
+import React from "react";
+import Typography from "./common/components/ui/typography";
 
 function App() {
+  const [dialogOpen, setDialogOpen] = React.useState(false);
   const { isLoading } = useLoader();
   const { data, isError, error } = useQuery({
     queryKey: ["weather"],
@@ -12,17 +16,22 @@ function App() {
   if (isLoading) return <div>Loading...</div>;
 
   if (isError) return <div>Error: {(error as Error).message}</div>;
+  const onConfirm = () => {
+    alert("Confirmed!");
+  }
   return (
     <>
       <div className="flex gap-4 items-center">
-        <AppButton appearance="primary" className="bg-blue-600">Show</AppButton>
-        <AppButton appearance="outline">Outline</AppButton>
-        <AppButton appearance="ghost">Ghost</AppButton>
+        <Button variant="outline" size="md" onClick={() => setDialogOpen(true)}>
+          Open Dialog
+        </Button>
       </div>
-      <h1 className="font-bold text-3xl text-blue-500">Vite + React</h1>
+      <Typography variant="h2">Vite + React</Typography>
       <pre>{JSON.stringify(data, null, 2)}</pre>
+      <AppDiaglog dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} title="Weather Forecast" confirmText="OK" cancelText="Cancel" onConfirm={onConfirm} />
     </>
   );
 }
 
 export default App;
+

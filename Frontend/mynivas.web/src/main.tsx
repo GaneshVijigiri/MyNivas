@@ -7,14 +7,17 @@ import "@mantine/core/styles.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { TooltipProvider } from "./common/components/ui/tooltip.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <QueryClientProvider client={new QueryClient()}>
-      <MantineProvider>
-        <ToastContainer />
+      <TooltipProvider>
+        <MantineProvider>
+          <ToastContainer />
           <App />
-      </MantineProvider>
+        </MantineProvider>
+      </TooltipProvider>
     </QueryClientProvider>
   </StrictMode>,
 );
