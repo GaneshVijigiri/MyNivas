@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Dialog as DialogPrimitive } from "radix-ui";
 
-import { Button } from "@/common/components/ui/button";
+import { Button } from "@/common/components/shadcn/button";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Cancel01Icon } from "@hugeicons/core-free-icons";
 import { cn } from "@/common/utils/utils";
@@ -113,7 +113,7 @@ function DialogFooter({
       {children}
       {showCloseButton && (
         <DialogPrimitive.Close asChild>
-          <Button variant="outline">Close</Button>
+          <Button variant="secondary">Close</Button>
         </DialogPrimitive.Close>
       )}
     </div>
@@ -160,57 +160,4 @@ export {
   DialogPortal,
   DialogTitle,
   DialogTrigger,
-};
-
-interface AppDialogProps {
-  dialogOpen: boolean;
-  setDialogOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  title: string;
-  description?: string;
-  showCloseButton?: boolean;
-  className?: string;
-  children?: React.ReactNode;
-  confirmText?: string;
-  cancelText?: string;
-  onConfirm?: () => void;
-}
-
-export const AppDiaglog = ({
-  dialogOpen,
-  setDialogOpen,
-  title,
-  description,
-  showCloseButton = true,
-  className,
-  children,
-  confirmText,
-  cancelText,
-  onConfirm,
-}: AppDialogProps) => {
-  return (
-    <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-      <DialogContent className={className} showCloseButton={showCloseButton} >
-        <DialogHeader>
-          <DialogTitle>{title}</DialogTitle>
-          {description && <DialogDescription>{description}</DialogDescription>}
-        </DialogHeader>
-        {children && <div className="mt-2">{children}</div>}
-        <DialogFooter>
-          {cancelText && (
-            <Button variant="outline" onClick={() => setDialogOpen(false)}>
-              {cancelText}
-            </Button>
-          )}
-          {confirmText && (
-            <Button variant="outline" onClick={() => {
-              onConfirm && onConfirm();
-              setDialogOpen(false);
-            }}>
-              {confirmText}
-            </Button>
-          )}
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
-  );
 };

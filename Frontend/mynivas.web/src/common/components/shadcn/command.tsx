@@ -10,11 +10,11 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@/common/components/ui/dialog"
+} from "@/common/components/shadcn/dialog"
 import {
   InputGroup,
   InputGroupAddon,
-} from "@/common/components/ui/input-group"
+} from "@/common/components/shadcn/input-group"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { SearchIcon, Tick02Icon } from "@hugeicons/core-free-icons"
 

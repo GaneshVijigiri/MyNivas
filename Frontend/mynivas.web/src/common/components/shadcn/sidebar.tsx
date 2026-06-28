@@ -6,22 +6,22 @@ import { Slot } from "radix-ui"
 
 import { useIsMobile } from "@/common/hooks/use-mobile"
 import { cn } from "@/common/utils/utils"
-import { Button } from "@/common/components/ui/button"
-import { Input } from "@/common/components/ui/input"
-import { Separator } from "@/common/components/ui/separator"
+import { Button } from "@/common/components/shadcn/button"
+import { Input } from "@/common/components/shadcn/input"
+import { Separator } from "@/common/components/shadcn/separator"
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
-} from "@/common/components/ui/sheet"
-import { Skeleton } from "@/common/components/ui/skeleton"
+} from "@/common/components/shadcn/sheet"
+import { Skeleton } from "@/common/components/shadcn/skeleton"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/common/components/ui/tooltip"
+} from "@/common/components/shadcn/tooltip"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { SidebarLeftIcon } from "@hugeicons/core-free-icons"
 

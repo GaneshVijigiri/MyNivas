@@ -7,7 +7,7 @@ import "@mantine/core/styles.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { TooltipProvider } from "./common/components/ui/tooltip.tsx";
+import { TooltipProvider } from "./common/components/shadcn/tooltip.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
